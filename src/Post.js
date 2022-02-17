@@ -1,18 +1,22 @@
 import React from 'react'
 import './Post.css'
+import { Avatar } from '@mui/material'
 
-export default function Post() {
+export default function Post({ username, caption, imageUrl }) {
     return (
         <div className='post'>
-            <h3>Username</h3>
-            {/* header => avatar + username  */}
+            <div className='post_header'>
+                <Avatar
+                    className='post_avatar'
+                    alt='Batman'
+                    src='/batman_avatar.png'
+                />
+                <h3>{username}</h3>
+            </div>
 
+            <img className='post_image' src={imageUrl} alt='' />
 
-            <img className='post_image' src='/mountain.jpg' alt='mountain' />
-            {/* image */}
-
-            <h4>Username: caption</h4>
-            {/* username + caption */}
+            <h4 className='post_text'><strong>{username}</strong> {caption}</h4>
 
 
         </div>
