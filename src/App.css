@@ -17,3 +17,12 @@
 .app_headerImage{
     width: 20%;
     }
+
+.app_signUp {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: lightgrey;
+    
+
+}
