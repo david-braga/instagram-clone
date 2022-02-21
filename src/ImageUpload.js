@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '@mui/material'
 import firebase from 'firebase/compat/app'
 import { storage, db } from './firebase'
+import './ImageUpload.css'
 
 export default function ImageUpload({ username }) {
     const [image, setImage] = useState(null);
@@ -53,8 +54,8 @@ export default function ImageUpload({ username }) {
     }
 
     return (
-        <div>
-            <progress value={progress} max='100' />
+        <div className='imageUpload'>
+            <progress className='imageUpload_progress' value={progress} max='100' />
             <input type='text' value={caption} onChange={event => setCaption(event.target.value)} placeholder='Enter a caption...' />
             <input type='file' onChange={handleChange} />
             <Button className='imageUpload_button' onClick={handleUpload}>
@@ -64,5 +65,3 @@ export default function ImageUpload({ username }) {
         </div>
     )
 }
-// Firebase Storage: An unknown error occurred,
-//  please check the error payload for server response. (storage/unknown)

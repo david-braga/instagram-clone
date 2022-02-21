@@ -7,15 +7,31 @@
    
 }
 
+.app_posts {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.app_postsRight { 
+    margin-left: 2rem;
+}
+
 .app_header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color: #fafafa;
     padding: 20px;
     border-bottom: 1px solid lightgray ;
-    /* object-fit: contain; */
+    object-fit: contain;
+    display: flex;
+    justify-content: space-between;
 }
 
 .app_headerImage{
-    width: 20%;
+    width: 15%;
+    object-fit: contain;
     }
 
 .app_signUp {
@@ -23,6 +39,8 @@
     flex-direction: column;
     padding: 2rem;
     background-color: lightgrey;
+    padding: 2rem;
+    display: flex;
     
 
 }

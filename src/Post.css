@@ -28,3 +28,28 @@ background-color: #fff;
     .post_avatar {
         margin-right: 0.7rem;
     }
+
+    .post_commentBox {
+
+        display: flex;
+        margin-top: 0.5rem;
+    }
+
+    .post_comments{
+        padding: 1rem;
+    }
+
+    .post_input {
+        flex: 1;
+        border: none;
+        padding: 0.5rem;
+        border-top: 1px solid lightgray;
+    }
+
+    .post_button {
+        flex: 0;
+        border: none;
+        color: #6082a3;
+        background-color: transparent;
+        border-top: 1px solid lightgray;
+    }
