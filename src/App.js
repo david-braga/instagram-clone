@@ -226,27 +226,7 @@ function App() {
             ))
           }
         </div>
-        {/* 
-        <div className='app_postsRight'>
-          <InstagramEmbed
-            url='https://unsplash.com/photos/oO6Gm16Cqcg'
-            clientAccessToken='667214554708903'
-            maxWidth={320}
-            hideCaption={false}
-            containerTagName='div'
-            protocol=''
-            injectScript
-            onLoading={() => { }}
-            onSuccess={() => { }}
-            onAfterRender={() => { }}
-            onFailure={() => { }}
-          />
-        </div> */}
-
-
-
       </div>
-
 
       {user?.displayName ? (
         <ImageUpload username={user.displayName} />

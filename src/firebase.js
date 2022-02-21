@@ -2,7 +2,6 @@ import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import 'firebase/compat/storage'
 import 'firebase/compat/auth'
-// import { getStorage } from 'firebase/compat/storage'
 
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyBGyAEH8DTWjFWDpq5pb-_5kSm5O6Lj8w8",
